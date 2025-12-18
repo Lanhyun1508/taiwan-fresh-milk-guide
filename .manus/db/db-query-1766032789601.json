@@ -1,0 +1,108 @@
+{
+  "query": "SELECT id, brandName, productName, pasteurizationType, officialWebsite FROM milk_brands WHERE pasteurizationType IN ('LTLT', 'HTST') ORDER BY pasteurizationType, brandName",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2kwH7SHvYkrZvsL.33c23ca4d9ea --database bHMFCYfGq4CX9WAsA5sRFQ --execute SELECT id, brandName, productName, pasteurizationType, officialWebsite FROM milk_brands WHERE pasteurizationType IN ('LTLT', 'HTST') ORDER BY pasteurizationType, brandName",
+  "rows": [
+    {
+      "id": "8",
+      "brandName": "主人牧場",
+      "productName": "主人牧場鮮乳",
+      "pasteurizationType": "LTLT",
+      "officialWebsite": "NULL"
+    },
+    {
+      "id": "30001",
+      "brandName": "北海道函館直送",
+      "productName": "北海道函館直送3.7鮮奶",
+      "pasteurizationType": "LTLT",
+      "officialWebsite": "NULL"
+    },
+    {
+      "id": "7",
+      "brandName": "四方",
+      "productName": "四方鮮乳",
+      "pasteurizationType": "LTLT",
+      "officialWebsite": "https://www.fourway.com.tw/"
+    },
+    {
+      "id": "30002",
+      "brandName": "秀姑巒鮮乳",
+      "productName": "秀姑巒鮮乳（阿秀鮮乳）",
+      "pasteurizationType": "LTLT",
+      "officialWebsite": "NULL"
+    },
+    {
+      "id": "30003",
+      "brandName": "老爹鮮乳",
+      "productName": "老爹鮮乳",
+      "pasteurizationType": "LTLT",
+      "officialWebsite": "NULL"
+    },
+    {
+      "id": "3",
+      "brandName": "光泉",
+      "productName": "光泉鮮乳",
+      "pasteurizationType": "HTST",
+      "officialWebsite": "https://www.kuangchuan.com/"
+    },
+    {
+      "id": "30004",
+      "brandName": "初鹿鮮乳",
+      "productName": "初鹿鮮乳",
+      "pasteurizationType": "HTST",
+      "officialWebsite": "NULL"
+    },
+    {
+      "id": "4",
+      "brandName": "林鳳營",
+      "productName": "林鳳營鮮乳",
+      "pasteurizationType": "HTST",
+      "officialWebsite": "https://www.uni-president.com.tw/"
+    },
+    {
+      "id": "2",
+      "brandName": "瑞穗",
+      "productName": "瑞穗鮮乳",
+      "pasteurizationType": "HTST",
+      "officialWebsite": "https://www.uni-president.com.tw/"
+    },
+    {
+      "id": "6",
+      "brandName": "福樂",
+      "productName": "福樂一番鮮",
+      "pasteurizationType": "HTST",
+      "officialWebsite": "https://www.freshdelight.com.tw/"
+    },
+    {
+      "id": "30005",
+      "brandName": "統一瑞穗",
+      "productName": "瑞穗極制鮮乳",
+      "pasteurizationType": "HTST",
+      "officialWebsite": "https://www.uni-president.com.tw/"
+    },
+    {
+      "id": "5",
+      "brandName": "義美",
+      "productName": "義美鮮乳",
+      "pasteurizationType": "HTST",
+      "officialWebsite": "https://www.imeifoods.com.tw/"
+    },
+    {
+      "id": "30006",
+      "brandName": "義美",
+      "productName": "義美全脂鮮乳（特定通路專售）",
+      "pasteurizationType": "HTST",
+      "officialWebsite": "https://www.imeifoods.com.tw/"
+    },
+    {
+      "id": "1",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊鮮乳",
+      "pasteurizationType": "HTST",
+      "officialWebsite": "https://www.ilovemilk.com.tw/"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tbrandName\tproductName\tpasteurizationType\tofficialWebsite\n8\t主人牧場\t主人牧場鮮乳\tLTLT\tNULL\n30001\t北海道函館直送\t北海道函館直送3.7鮮奶\tLTLT\tNULL\n7\t四方\t四方鮮乳\tLTLT\thttps://www.fourway.com.tw/\n30002\t秀姑巒鮮乳\t秀姑巒鮮乳（阿秀鮮乳）\tLTLT\tNULL\n30003\t老爹鮮乳\t老爹鮮乳\tLTLT\tNULL\n3\t光泉\t光泉鮮乳\tHTST\thttps://www.kuangchuan.com/\n30004\t初鹿鮮乳\t初鹿鮮乳\tHTST\tNULL\n4\t林鳳營\t林鳳營鮮乳\tHTST\thttps://www.uni-president.com.tw/\n2\t瑞穗\t瑞穗鮮乳\tHTST\thttps://www.uni-president.com.tw/\n6\t福樂\t福樂一番鮮\tHTST\thttps://www.freshdelight.com.tw/\n30005\t統一瑞穗\t瑞穗極制鮮乳\tHTST\thttps://www.uni-president.com.tw/\n5\t義美\t義美鮮乳\tHTST\thttps://www.imeifoods.com.tw/\n30006\t義美\t義美全脂鮮乳（特定通路專售）\tHTST\thttps://www.imeifoods.com.tw/\n1\t鮮乳坊\t鮮乳坊鮮乳\tHTST\thttps://www.ilovemilk.com.tw/\n",
+  "stderr": "",
+  "execution_time_ms": 2123
+}

@@ -11,10 +11,15 @@ import {
   type PasteurizationType,
 } from "@shared/milkConstants";
 import { ArrowRight, Search, Scale, Send, Milk } from "lucide-react";
+import { useEffect } from "react";
 
 export default function Home() {
   const { data: brands, isLoading } = trpc.brands.list.useQuery({});
   const { data: stats } = trpc.stats.get.useQuery();
+
+  useEffect(() => {
+    document.title = "台灣鮮乳選購指南 | 純鮮奶品牌資料庫 - 殺菌方式、通路、價格比較";
+  }, []);
 
   const featuredBrands = brands?.slice(0, 4) || [];
 
