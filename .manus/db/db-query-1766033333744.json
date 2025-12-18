@@ -1,0 +1,58 @@
+{
+  "query": "SELECT id, brandName, productName, pasteurizationType FROM milk_brands WHERE pasteurizationType IN ('LTLT', 'HTST') ORDER BY pasteurizationType, brandName",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2kwH7SHvYkrZvsL.33c23ca4d9ea --database bHMFCYfGq4CX9WAsA5sRFQ --execute SELECT id, brandName, productName, pasteurizationType FROM milk_brands WHERE pasteurizationType IN ('LTLT', 'HTST') ORDER BY pasteurizationType, brandName",
+  "rows": [
+    {
+      "id": "8",
+      "brandName": "主人牧場",
+      "productName": "主人牧場鮮乳",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "30001",
+      "brandName": "北海道函館直送",
+      "productName": "北海道函館直送3.7鮮奶",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "7",
+      "brandName": "四方",
+      "productName": "四方鮮乳",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "30002",
+      "brandName": "秀姑巒鮮乳",
+      "productName": "秀姑巒鮮乳（阿秀鮮乳）",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "30003",
+      "brandName": "老爹鮮乳",
+      "productName": "老爹鮮乳",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "30004",
+      "brandName": "初鹿鮮乳",
+      "productName": "初鹿鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "30005",
+      "brandName": "統一瑞穗",
+      "productName": "瑞穗極制鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "30006",
+      "brandName": "義美",
+      "productName": "義美全脂鮮乳（特定通路專售）",
+      "pasteurizationType": "HTST"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tbrandName\tproductName\tpasteurizationType\n8\t主人牧場\t主人牧場鮮乳\tLTLT\n30001\t北海道函館直送\t北海道函館直送3.7鮮奶\tLTLT\n7\t四方\t四方鮮乳\tLTLT\n30002\t秀姑巒鮮乳\t秀姑巒鮮乳（阿秀鮮乳）\tLTLT\n30003\t老爹鮮乳\t老爹鮮乳\tLTLT\n30004\t初鹿鮮乳\t初鹿鮮乳\tHTST\n30005\t統一瑞穗\t瑞穗極制鮮乳\tHTST\n30006\t義美\t義美全脂鮮乳（特定通路專售）\tHTST\n",
+  "stderr": "",
+  "execution_time_ms": 1504
+}

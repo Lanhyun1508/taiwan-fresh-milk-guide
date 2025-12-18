@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE milk_brands SET pasteurizationType = 'UHT' WHERE brandName = '光泉'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2kwH7SHvYkrZvsL.33c23ca4d9ea --database bHMFCYfGq4CX9WAsA5sRFQ --execute UPDATE milk_brands SET pasteurizationType = 'UHT' WHERE brandName = '光泉'",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1583
+}

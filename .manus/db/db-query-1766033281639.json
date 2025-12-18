@@ -1,0 +1,52 @@
+{
+  "query": "SELECT id, brandName, productName, pasteurizationType FROM milk_brands WHERE brandName LIKE '%鮮乳坊%'",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2kwH7SHvYkrZvsL.33c23ca4d9ea --database bHMFCYfGq4CX9WAsA5sRFQ --execute SELECT id, brandName, productName, pasteurizationType FROM milk_brands WHERE brandName LIKE '%鮮乳坊%'",
+  "rows": [
+    {
+      "id": "1",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "30042",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊桂芳牧場鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30043",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊嘉明鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30044",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊A2β酪蛋白鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30045",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊豐樂牧場鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30046",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊幸運兒牧場鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30047",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊許慶良牧場鮮乳",
+      "pasteurizationType": "UHT"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tbrandName\tproductName\tpasteurizationType\n1\t鮮乳坊\t鮮乳坊鮮乳\tHTST\n30042\t鮮乳坊\t鮮乳坊桂芳牧場鮮乳\tUHT\n30043\t鮮乳坊\t鮮乳坊嘉明鮮乳\tUHT\n30044\t鮮乳坊\t鮮乳坊A2β酪蛋白鮮乳\tUHT\n30045\t鮮乳坊\t鮮乳坊豐樂牧場鮮乳\tUHT\n30046\t鮮乳坊\t鮮乳坊幸運兒牧場鮮乳\tUHT\n30047\t鮮乳坊\t鮮乳坊許慶良牧場鮮乳\tUHT\n",
+  "stderr": "",
+  "execution_time_ms": 1516
+}

@@ -1,0 +1,358 @@
+{
+  "query": "SELECT id, brandName, productName, pasteurizationType FROM milk_brands ORDER BY pasteurizationType, brandName",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2kwH7SHvYkrZvsL.33c23ca4d9ea --database bHMFCYfGq4CX9WAsA5sRFQ --execute SELECT id, brandName, productName, pasteurizationType FROM milk_brands ORDER BY pasteurizationType, brandName",
+  "rows": [
+    {
+      "id": "8",
+      "brandName": "主人牧場",
+      "productName": "主人牧場鮮乳",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "30001",
+      "brandName": "北海道函館直送",
+      "productName": "北海道函館直送3.7鮮奶",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "7",
+      "brandName": "四方",
+      "productName": "四方鮮乳",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "30002",
+      "brandName": "秀姑巒鮮乳",
+      "productName": "秀姑巒鮮乳（阿秀鮮乳）",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "30003",
+      "brandName": "老爹鮮乳",
+      "productName": "老爹鮮乳",
+      "pasteurizationType": "LTLT"
+    },
+    {
+      "id": "3",
+      "brandName": "光泉",
+      "productName": "光泉鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "30004",
+      "brandName": "初鹿鮮乳",
+      "productName": "初鹿鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "4",
+      "brandName": "林鳳營",
+      "productName": "林鳳營鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "2",
+      "brandName": "瑞穗",
+      "productName": "瑞穗鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "6",
+      "brandName": "福樂",
+      "productName": "福樂一番鮮",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "30005",
+      "brandName": "統一瑞穗",
+      "productName": "瑞穗極制鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "5",
+      "brandName": "義美",
+      "productName": "義美鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "30006",
+      "brandName": "義美",
+      "productName": "義美全脂鮮乳（特定通路專售）",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "1",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊鮮乳",
+      "pasteurizationType": "HTST"
+    },
+    {
+      "id": "30009",
+      "brandName": "Arla",
+      "productName": "Arla丹麥有機全脂鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "9",
+      "brandName": "Costco Kirkland",
+      "productName": "Kirkland 有機鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30048",
+      "brandName": "Echiré",
+      "productName": "Echiré法國艾許奶油全脂牛乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30010",
+      "brandName": "MILKLAB",
+      "productName": "MILKLAB澳洲進口無乳糖牛奶",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30011",
+      "brandName": "丹醇鮮乳",
+      "productName": "丹醇鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30012",
+      "brandName": "主恩鮮乳",
+      "productName": "主恩鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30013",
+      "brandName": "五梅鮮乳",
+      "productName": "五梅鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30014",
+      "brandName": "光泉",
+      "productName": "光泉100%純鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30015",
+      "brandName": "光泉",
+      "productName": "光泉全脂鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30016",
+      "brandName": "六甲田莊",
+      "productName": "六甲田莊鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30017",
+      "brandName": "北海道十勝四葉",
+      "productName": "北海道十勝四葉鮮奶",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30018",
+      "brandName": "味全",
+      "productName": "林鳳營鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30019",
+      "brandName": "喬伊鮮奶",
+      "productName": "喬伊鮮奶（19號）",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30020",
+      "brandName": "家樂福",
+      "productName": "家樂福鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30021",
+      "brandName": "崙背鮮乳",
+      "productName": "崙背鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30022",
+      "brandName": "新一代農民鮮乳",
+      "productName": "新一代農民鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30023",
+      "brandName": "新生活",
+      "productName": "新生活鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30024",
+      "brandName": "柳營鮮乳",
+      "productName": "柳營鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30025",
+      "brandName": "牧實雪凝",
+      "productName": "牧實雪凝鮮奶",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30026",
+      "brandName": "牧真鮮乳",
+      "productName": "牧真鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30027",
+      "brandName": "福樂",
+      "productName": "福樂鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30028",
+      "brandName": "福樂",
+      "productName": "福樂一番鮮100%特極鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30029",
+      "brandName": "福爾摩沙",
+      "productName": "福爾摩沙鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30030",
+      "brandName": "禾香鮮乳",
+      "productName": "禾香鮮乳（奶素）",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30032",
+      "brandName": "統一瑞穗",
+      "productName": "瑞穗低脂鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30031",
+      "brandName": "統一瑞穗",
+      "productName": "瑞穗全脂鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30033",
+      "brandName": "義美",
+      "productName": "義美無乳糖全脂鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30034",
+      "brandName": "義美",
+      "productName": "義美全脂鮮乳（家庭號）",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30035",
+      "brandName": "義美",
+      "productName": "義美低脂鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30036",
+      "brandName": "肯啃鮮乳",
+      "productName": "肯啃鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30037",
+      "brandName": "萬丹酪農戶限定鮮乳",
+      "productName": "萬丹酪農戶限定鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30038",
+      "brandName": "阿猴",
+      "productName": "阿猴鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30039",
+      "brandName": "養樂多",
+      "productName": "養樂多優質鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30040",
+      "brandName": "養樂多",
+      "productName": "養樂多全脂鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30041",
+      "brandName": "高大鮮乳",
+      "productName": "高大鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30042",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊桂芳牧場鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30043",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊嘉明鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30044",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊A2β酪蛋白鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30045",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊豐樂牧場鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30046",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊幸運兒牧場鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "30047",
+      "brandName": "鮮乳坊",
+      "productName": "鮮乳坊許慶良牧場鮮乳",
+      "pasteurizationType": "UHT"
+    },
+    {
+      "id": "10",
+      "brandName": "味全",
+      "productName": "味全高品質鮮乳",
+      "pasteurizationType": "ESL"
+    },
+    {
+      "id": "30007",
+      "brandName": "科克蘭",
+      "productName": "科克蘭冷藏全脂鮮乳",
+      "pasteurizationType": "ESL"
+    },
+    {
+      "id": "30008",
+      "brandName": "豐力富",
+      "productName": "豐力富紐西蘭全脂鮮乳",
+      "pasteurizationType": "ESL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tbrandName\tproductName\tpasteurizationType\n8\t主人牧場\t主人牧場鮮乳\tLTLT\n30001\t北海道函館直送\t北海道函館直送3.7鮮奶\tLTLT\n7\t四方\t四方鮮乳\tLTLT\n30002\t秀姑巒鮮乳\t秀姑巒鮮乳（阿秀鮮乳）\tLTLT\n30003\t老爹鮮乳\t老爹鮮乳\tLTLT\n3\t光泉\t光泉鮮乳\tHTST\n30004\t初鹿鮮乳\t初鹿鮮乳\tHTST\n4\t林鳳營\t林鳳營鮮乳\tHTST\n2\t瑞穗\t瑞穗鮮乳\tHTST\n6\t福樂\t福樂一番鮮\tHTST\n30005\t統一瑞穗\t瑞穗極制鮮乳\tHTST\n5\t義美\t義美鮮乳\tHTST\n30006\t義美\t義美全脂鮮乳（特定通路專售）\tHTST\n1\t鮮乳坊\t鮮乳坊鮮乳\tHTST\n30009\tArla\tArla丹麥有機全脂鮮乳\tUHT\n9\tCostco Kirkland\tKirkland 有機鮮乳\tUHT\n30048\tEchiré\tEchiré法國艾許奶油全脂牛乳\tUHT\n30010\tMILKLAB\tMILKLAB澳洲進口無乳糖牛奶\tUHT\n30011\t丹醇鮮乳\t丹醇鮮乳\tUHT\n30012\t主恩鮮乳\t主恩鮮乳\tUHT\n30013\t五梅鮮乳\t五梅鮮乳\tUHT\n30014\t光泉\t光泉100%純鮮乳\tUHT\n30015\t光泉\t光泉全脂鮮乳\tUHT\n30016\t六甲田莊\t六甲田莊鮮乳\tUHT\n30017\t北海道十勝四葉\t北海道十勝四葉鮮奶\tUHT\n30018\t味全\t林鳳營鮮乳\tUHT\n30019\t喬伊鮮奶\t喬伊鮮奶（19號）\tUHT\n30020\t家樂福\t家樂福鮮乳\tUHT\n30021\t崙背鮮乳\t崙背鮮乳\tUHT\n30022\t新一代農民鮮乳\t新一代農民鮮乳\tUHT\n30023\t新生活\t新生活鮮乳\tUHT\n30024\t柳營鮮乳\t柳營鮮乳\tUHT\n30025\t牧實雪凝\t牧實雪凝鮮奶\tUHT\n30026\t牧真鮮乳\t牧真鮮乳\tUHT\n30027\t福樂\t福樂鮮乳\tUHT\n30028\t福樂\t福樂一番鮮100%特極鮮乳\tUHT\n30029\t福爾摩沙\t福爾摩沙鮮乳\tUHT\n30030\t禾香鮮乳\t禾香鮮乳（奶素）\tUHT\n30032\t統一瑞穗\t瑞穗低脂鮮乳\tUHT\n30031\t統一瑞穗\t瑞穗全脂鮮乳\tUHT\n30033\t義美\t義美無乳糖全脂鮮乳\tUHT\n30034\t義美\t義美全脂鮮乳（家庭號）\tUHT\n30035\t義美\t義美低脂鮮乳\tUHT\n30036\t肯啃鮮乳\t肯啃鮮乳\tUHT\n30037\t萬丹酪農戶限定鮮乳\t萬丹酪農戶限定鮮乳\tUHT\n30038\t阿猴\t阿猴鮮乳\tUHT\n30039\t養樂多\t養樂多優質鮮乳\tUHT\n30040\t養樂多\t養樂多全脂鮮乳\tUHT\n30041\t高大鮮乳\t高大鮮乳\tUHT\n30042\t鮮乳坊\t鮮乳坊桂芳牧場鮮乳\tUHT\n30043\t鮮乳坊\t鮮乳坊嘉明鮮乳\tUHT\n30044\t鮮乳坊\t鮮乳坊A2β酪蛋白鮮乳\tUHT\n30045\t鮮乳坊\t鮮乳坊豐樂牧場鮮乳\tUHT\n30046\t鮮乳坊\t鮮乳坊幸運兒牧場鮮乳\tUHT\n30047\t鮮乳坊\t鮮乳坊許慶良牧場鮮乳\tUHT\n10\t味全\t味全高品質鮮乳\tESL\n30007\t科克蘭\t科克蘭冷藏全脂鮮乳\tESL\n30008\t豐力富\t豐力富紐西蘭全脂鮮乳\tESL\n",
+  "stderr": "",
+  "execution_time_ms": 1554
+}

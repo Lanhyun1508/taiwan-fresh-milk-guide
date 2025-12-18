@@ -1,0 +1,26 @@
+{
+  "query": "SELECT pasteurizationType, COUNT(*) as count FROM milk_brands GROUP BY pasteurizationType ORDER BY pasteurizationType",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2kwH7SHvYkrZvsL.33c23ca4d9ea --database bHMFCYfGq4CX9WAsA5sRFQ --execute SELECT pasteurizationType, COUNT(*) as count FROM milk_brands GROUP BY pasteurizationType ORDER BY pasteurizationType",
+  "rows": [
+    {
+      "pasteurizationType": "LTLT",
+      "count": "5"
+    },
+    {
+      "pasteurizationType": "HTST",
+      "count": "3"
+    },
+    {
+      "pasteurizationType": "UHT",
+      "count": "47"
+    },
+    {
+      "pasteurizationType": "ESL",
+      "count": "3"
+    }
+  ],
+  "messages": [],
+  "stdout": "pasteurizationType\tcount\nLTLT\t5\nHTST\t3\nUHT\t47\nESL\t3\n",
+  "stderr": "",
+  "execution_time_ms": 1537
+}
