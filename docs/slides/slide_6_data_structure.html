@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資料架構設計</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: #F8F9FA; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8F9FA;
+            /* keep top padding to preserve title spacing */
+            padding: 60px 60px 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            margin-bottom: 20px; /* reduced from 40 */
+            position: relative;
+        }
+
+        .header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #2D3436;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .header p {
+            font-size: 24px;
+            color: #636E72;
+            font-weight: 300;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 100px;
+            height: 4px;
+            background-color: #00B894;
+        }
+
+        /* Main Content Layout */
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+            gap: 30px; /* reduced from 60 */
+        }
+
+        .left-column {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* reduced */
+        }
+
+        .right-column {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* reduced */
+        }
+
+        /* Table Styling */
+        .table-container {
+            background: white;
+            padding: 12px; /* reduced */
+            border-top: 4px solid #00B894;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            color: #2D3436;
+            font-weight: 600;
+            margin-bottom: 12px; /* reduced */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: #00B894;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding: 10px; /* reduced */
+            background-color: #f1f2f6;
+            color: #2D3436;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        td {
+            padding: 10px; /* reduced */
+            border-bottom: 1px solid #dfe6e9;
+            color: #636E72;
+            font-size: 18px; /* keep font size */
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .method-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background-color: #eccc68; /* Distinct color for tags */
+            color: #2f3542;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .tag-ltlt { background-color: #ffeaa7; color: #d35400; }
+        .tag-htst { background-color: #81ecec; color: #00cec9; }
+        .tag-uht { background-color: #74b9ff; color: #0984e3; }
+        .tag-esl { background-color: #a29bfe; color: #6c5ce7; }
+
+        /* Data Fields Section */
+        .fields-container {
+            background: white;
+            padding: 12px; /* reduced */
+            border-left: 4px solid #74B9FF;
+        }
+
+        .field-list {
+            list-style: none;
+        }
+
+        .field-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0; /* reduced */
+            border-bottom: 1px dashed #dfe6e9;
+            font-size: 18px;
+            color: #636E72;
+        }
+
+        .field-item:last-child {
+            border-bottom: none;
+        }
+
+        .field-icon {
+            color: #74B9FF;
+            font-size: 16px;
+        }
+
+        /* Image Section */
+        .image-container {
+            width: 100%;
+            height: 120px; /* reduced from 250 */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block; /* ensure it doesn't add inline whitespace */
+            max-height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>資料架構設計</h2>
+            <p>以殺菌方式為核心的產品分類體系</p>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Left Column: Classification Table -->
+            <div class="left-column">
+                <div class="table-container">
+                    <div class="section-title">
+                        <i class="fas fa-flask"></i>
+                        殺菌方式分類
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="20%">方式</th>
+                                <th width="35%">全名/說明</th>
+                                <th width="45%">特點</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="method-tag tag-ltlt">LTLT</span></td>
+                                <td>低溫長時間殺菌</td>
+                                <td>保留較多營養，風味佳</td>
+                            </tr>
+                            <tr>
+                                <td><span class="method-tag tag-htst">HTST</span></td>
+                                <td>高溫短時間殺菌</td>
+                                <td>平衡營養與保存期限</td>
+                            </tr>
+                            <tr>
+                                <td><span class="method-tag tag-uht">UHT</span></td>
+                                <td>超高溫瞬間殺菌</td>
+                                <td>保存期限長，適合運輸</td>
+                            </tr>
+                            <tr>
+                                <td><span class="method-tag tag-esl">ESL</span></td>
+                                <td>延長保鮮期殺菌</td>
+                                <td>介於 HTST 與 UHT 之間</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Right Column: Data Fields & Image -->
+            <div class="right-column">
+                <div class="fields-container">
+                    <div class="section-title">
+                        <i class="fas fa-database"></i>
+                        品牌資料欄位
+                    </div>
+                    <ul class="field-list">
+                        <li class="field-item">
+                            <i class="fas fa-tag field-icon"></i>
+                            品牌名稱、產地、殺菌方式
+                        </li>
+                        <li class="field-item">
+                            <i class="fas fa-info-circle field-icon"></i>
+                            產品特色、成分說明
+                        </li>
+                        <li class="field-item">
+                            <i class="fas fa-image field-icon"></i>
+                            產品外包裝圖片
+                        </li>
+                        <li class="field-item">
+                            <i class="fas fa-sticky-note field-icon"></i>
+                            備註資訊
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="image-container">
+                    <img src="/home/ubuntu/upload/search_images/VF4tGSxiu0ao.jpg" alt="Glass Milk Bottles">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

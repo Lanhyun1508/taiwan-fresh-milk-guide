@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>總結</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: #F8F9FA; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8F9FA;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Left Column: Content Review */
+        .left-column {
+            width: 60%;
+            /* keep top padding (title spacing) but reduce bottom padding to fit under 720px */
+            padding: 80px 60px 30px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .header {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 56px;
+            color: #2D3436;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 24px;
+            color: #636E72;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            width: 80px;
+            height: 6px;
+            background-color: #00B894;
+        }
+
+        .highlights-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 22px;
+            color: #2D3436;
+            background: white;
+            padding: 20px 30px;
+            border-left: 4px solid #00B894;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .highlight-item i {
+            color: #00B894;
+            font-size: 24px;
+        }
+
+        /* Right Column: Closing & Contact */
+        .right-column {
+            width: 40%;
+            background-color: #2D3436; /* Dark contrast for the end */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .closing-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: #F8F9FA;
+        }
+
+        .contact-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .contact-label {
+            font-size: 18px;
+            color: #b2bec3;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .github-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #00B894;
+            font-size: 20px;
+            text-decoration: none;
+            background: rgba(255,255,255,0.1);
+            padding: 15px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            word-break: break-all;
+        }
+
+        .github-link i {
+            font-size: 28px;
+        }
+
+        /* Decorative Elements */
+        .deco-circle {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+
+        .deco-line {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 60px;
+            background-color: #00B894;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <div class="header">
+                <h2>總結</h2>
+                <p>鮮乳網站專案已啟動<br>期待打造優質資訊平台</p>
+            </div>
+
+            <ul class="highlights-list">
+                <li class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    明確的專案願景與目標受眾
+                </li>
+                <li class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    完整的功能規劃與系統架構
+                </li>
+                <li class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    GitHub 儲存庫已建立並開放協作
+                </li>
+                <li class="highlight-item">
+                    <i class="fas fa-check-circle"></i>
+                    清晰的開發里程碑規劃
+                </li>
+            </ul>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <div class="deco-circle"></div>
+            
+            <div class="closing-text">感謝聆聽</div>
+
+            <div class="contact-box">
+                <div class="contact-label">Project Repository</div>
+                <div class="github-link">
+                    <i class="fab fa-github"></i>
+                    Lanhyun1508/fresh-milk-website
+                </div>
+            </div>
+
+            <div class="deco-line"></div>
+        </div>
+    </div>
+</body>
+</html>

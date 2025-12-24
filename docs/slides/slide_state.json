@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "title": "鮮乳網站專案報告",
+    "created": 1766558889.303399,
+    "last_updated": 1766559359.0249248,
+    "total_slides": 11
+  },
+  "slides": {
+    "slide_1_cover": "edited",
+    "slide_2_vision": "edited",
+    "slide_3_progress": "edited",
+    "slide_4_features": "edited",
+    "slide_5_architecture": "edited",
+    "slide_6_data_structure": "edited",
+    "slide_7_ui_design": "edited",
+    "slide_8_milestones": "edited",
+    "slide_9_collaboration": "edited",
+    "slide_10_next_steps": "edited",
+    "slide_11_summary": "edited"
+  },
+  "outline": [
+    {
+      "id": "slide_1_cover",
+      "title": "鮮乳網站專案報告",
+      "summary": "專案封面，包含標題、副標題、專案名稱與日期。",
+      "image_plan": "/home/ubuntu/upload/search_images/msLhzh70TJLH.jpeg - The cover slide needs a high-quality image of milk. Image 1 is a clean, appealing bottle of \"Raw Milk\" which fits the theme of a \"fresh milk website project.\"",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_2_vision",
+      "title": "專案願景與目標",
+      "summary": "介紹打造台灣最完整純鮮乳資訊平台的願景、核心目標與目標受眾。",
+      "image_plan": "/home/ubuntu/upload/search_images/dbJyFHJLV3Kb.jpg - This slide discusses the project vision and goals related to various milk brands and consumer choice. Image 5 shows a variety of different milk containers and brands, visually representing the comprehensive platform goal.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_3_progress",
+      "title": "專案開發進度總覽",
+      "summary": "展示目前已完成的規劃階段項目與進行中的開發階段項目狀態。",
+      "image_plan": "/home/ubuntu/upload/search_images/BeEsx3yYxoES.jpg - This slide is about project progress and status. Image 16 is a clear \"Project Roadmap Timeline Template\" which visually represents progress and planning, fitting the content well.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_4_features",
+      "title": "核心功能模組",
+      "summary": "詳細介紹品牌清單、產品資訊、搜尋功能、投稿功能與產品圖片五大核心功能。",
+      "image_plan": "/home/ubuntu/upload/search_images/rI6pntX0aAl9.jpg - This slide lists core functional modules, including product information and images. Image 7 shows various milk bottle designs and branding, which relates to the product display and branding focus of the functions.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_5_architecture",
+      "title": "系統架構設計",
+      "summary": "說明前端、後端技術棧選擇與部署架構規劃。",
+      "image_plan": "/home/ubuntu/upload/search_images/XUBea0vHqMQy.webp - This slide details the system architecture and technology stack (React/Vue, Node.js/Python, MySQL/PostgreSQL). Image 10 is a clean diagram titled \"Setting up tech stack\" with various logos, directly illustrating the slide's content.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_6_data_structure",
+      "title": "資料架構設計",
+      "summary": "展示以殺菌方式為核心的分類體系與品牌資料欄位結構。",
+      "image_plan": "/home/ubuntu/upload/search_images/VF4tGSxiu0ao.jpg - This slide focuses on data structure, particularly the classification by pasteurization methods and product features. Image 3 shows generic, clean glass milk bottles, which can represent the pure product data being classified.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_7_ui_design",
+      "title": "使用者介面設計方向",
+      "summary": "闡述簡約俐落的 MUJI 風格設計原則與主要頁面規劃。",
+      "image_plan": "/home/ubuntu/upload/search_images/9moz4wtMYthm.jpg - This slide discusses UI design direction, emphasizing a clean, high-quality look (MUJI style). Image 8 shows clean, modern milk bottles in a dynamic setting, conveying a sense of quality and design aesthetic.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_8_milestones",
+      "title": "開發里程碑規劃",
+      "summary": "列出基礎建設、核心開發、功能完善與上線優化四個階段的規劃。",
+      "image_plan": "/home/ubuntu/upload/search_images/2SM8WeQioMNt.png - This slide outlines the development milestones and phases. Image 15 is a \"Project Roadmap Templates\" visual, which is highly relevant to planning and milestones. (Using 15 as 16 was used for Slide 3).",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_9_collaboration",
+      "title": "版本控制與協作",
+      "summary": "提供 GitHub 儲存庫資訊與團隊協作機制說明。",
+      "image_plan": "/home/ubuntu/upload/search_images/Mw9XUo8FV0XR.png - This slide is about version control and collaboration using GitHub. Image 14 is a software architecture diagram showing collaboration and system components, which can represent the technical collaboration structure.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_10_next_steps",
+      "title": "下一步行動計畫",
+      "summary": "列出近期優先事項、中期目標與長期願景。",
+      "image_plan": "/home/ubuntu/upload/search_images/ULMjYQ0TyVOm.png - This slide details the next steps and action plan. Image 13 is a software architecture diagram that can represent the planning and structural steps being taken next.",
+      "slide_template_key": ""
+    },
+    {
+      "id": "slide_11_summary",
+      "title": "總結",
+      "summary": "回顧專案亮點並提供聯繫方式。",
+      "image_plan": "",
+      "slide_template_key": ""
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>版本控制與協作</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: #F8F9FA; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8F9FA;
+            /* keep top padding for title, reduce bottom and horizontal padding to save height */
+            padding: 60px 40px 20px 40px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            margin-bottom: 24px; /* shrink spacing under header */
+            position: relative;
+        }
+
+        .header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #2D3436;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .header p {
+            font-size: 24px;
+            color: #636E72;
+            font-weight: 300;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 100px;
+            height: 4px;
+            background-color: #00B894;
+        }
+
+        /* Main Content Layout */
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .info-column {
+            flex: 4;
+            display: flex;
+            /* switch to row layout to avoid tall vertical stacking */
+            flex-direction: row;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+        .info-column .info-block {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .image-column {
+            flex: 5;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background: white;
+            border: 1px solid #dfe6e9;
+            padding: 12px;
+        }
+
+        .image-container {
+            width: 100%;
+            height: auto; /* avoid stretching to full column height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 80%; /* shrink visual size so it doesn't force tall column */
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Info Blocks */
+        .info-block {
+            background: white;
+            padding: 16px; /* reduced padding */
+            border-left: 5px solid #2D3436;
+        }
+
+        .info-block.repo {
+            border-left-color: #00B894;
+        }
+
+        .info-block.collab {
+            border-left-color: #74B9FF;
+        }
+
+        .block-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #2D3436;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .block-title i {
+            font-size: 20px;
+        }
+
+        .repo .block-title i { color: #00B894; }
+        .collab .block-title i { color: #74B9FF; }
+
+        /* Data Table */
+        .data-row {
+            display: flex;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #f1f2f6;
+            padding-bottom: 6px;
+        }
+
+        .data-row:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .data-label {
+            width: 120px;
+            font-weight: 500;
+            color: #636E72;
+            font-size: 16px;
+        }
+
+        .data-value {
+            flex: 1;
+            color: #2D3436;
+            font-weight: 400;
+            font-size: 16px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* List Styling */
+        .custom-list {
+            list-style: none;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px; /* slightly reduced */
+            font-size: 18px;
+            color: #636E72;
+        }
+
+        .list-item i {
+            width: 24px;
+            text-align: center;
+            color: #74B9FF;
+        }
+
+        .file-tag {
+            display: inline-block;
+            background: #f1f2f6;
+            padding: 2px 8px;
+            font-family: monospace;
+            font-size: 14px;
+            color: #2D3436;
+            border: 1px solid #dfe6e9;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>版本控制與協作</h2>
+            <p>GitHub 儲存庫已就緒，支援團隊協作開發</p>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="info-column">
+                <!-- Repository Info -->
+                <div class="info-block repo">
+                    <div class="block-title">
+                        <i class="fab fa-github"></i>
+                        儲存庫資訊
+                    </div>
+                    <div class="data-row">
+                        <div class="data-label">名稱</div>
+                        <div class="data-value">fresh-milk-website</div>
+                    </div>
+                    <div class="data-row">
+                        <div class="data-label">可見性</div>
+                        <div class="data-value">Public (公開)</div>
+                    </div>
+                    <div class="data-row">
+                        <div class="data-label">授權</div>
+                        <div class="data-value">MIT License</div>
+                    </div>
+                    <div class="data-row" style="margin-top: 12px; border-top: 1px dashed #dfe6e9; padding-top: 12px;">
+                        <div class="data-label">初始檔案</div>
+                        <div class="data-value">
+                            <span class="file-tag">README.md</span>
+                            <span class="file-tag">.gitignore</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collaboration Info -->
+                <div class="info-block collab">
+                    <div class="block-title">
+                        <i class="fas fa-users-cog"></i>
+                        協作機制
+                    </div>
+                    <ul class="custom-list">
+                        <li class="list-item">
+                            <i class="fas fa-code-branch"></i>
+                            歡迎提交 Pull Request
+                        </li>
+                        <li class="list-item">
+                            <i class="far fa-dot-circle"></i>
+                            透過 Issue 回報問題或建議
+                        </li>
+                        <li class="list-item">
+                            <i class="fas fa-hands-helping"></i>
+                            開放社群貢獻與維護
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="image-column">
+                <div class="image-container">
+                    <img src="/home/ubuntu/upload/search_images/Mw9XUo8FV0XR.png" alt="Collaboration Architecture Diagram">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

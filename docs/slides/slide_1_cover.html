@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鮮乳網站專案報告 - 封面</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: #F8F9FA; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8F9FA;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-section {
+            width: 45%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1); /* Slight overlay for better integration */
+        }
+
+        .content-section {
+            width: 55%;
+            padding: 80px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8F9FA;
+            position: relative;
+        }
+
+        .tag {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: #00B894; /* Fresh Green */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 64px;
+            color: #2D3436;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #636E72;
+            font-weight: 300;
+            margin-bottom: 60px;
+        }
+
+        .divider {
+            width: 80px;
+            height: 6px;
+            background-color: #00B894;
+            margin-bottom: 40px;
+        }
+
+        .meta-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .project-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            color: #2D3436;
+            font-weight: 700;
+        }
+
+        .date {
+            font-size: 20px;
+            color: #636E72;
+        }
+
+        /* Decorative element */
+        .circle-deco {
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid #74B9FF; /* Light Blue */
+            border-radius: 50%;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="image-section">
+            <img src="/home/ubuntu/upload/search_images/msLhzh70TJLH.jpeg" alt="Fresh Milk Bottle">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="content-section">
+            <div class="tag">Project Report</div>
+            <h1>鮮乳網站<br>專案報告</h1>
+            <h2>開發進度與系統架構總覽</h2>
+            <div class="divider"></div>
+            <div class="meta-info">
+                <div class="project-name">Project: fresh-milk-website</div>
+                <div class="date">2024年12月</div>
+            </div>
+            <div class="circle-deco"></div>
+        </div>
+    </div>
+</body>
+</html>

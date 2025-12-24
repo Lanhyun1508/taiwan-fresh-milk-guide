@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系統架構設計</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: #F8F9FA; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px; /* keep as required */
+            background-color: #F8F9FA;
+            padding: 60px 60px 30px; /* keep top padding for title consistency */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header { margin-bottom: 40px; position: relative; }
+        .header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #2D3436;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .header p { font-size: 24px; color: #636E72; font-weight: 300; }
+        .header::after { content: ''; position: absolute; left: 0; bottom: -20px; width: 100px; height: 4px; background-color: #00B894; }
+
+        /* Main Content Layout */
+        .content-wrapper { display: flex; flex-direction: column; flex: 1; gap: 24px; }
+        .columns-container { display: flex; justify-content: space-between; gap: 24px; }
+
+        .column {
+            flex: 1;
+            background: white;
+            padding: 20px; /* reduced inner padding */
+            border-top: 4px solid transparent;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .column.frontend { border-top-color: #00B894; }
+        .column.backend { border-top-color: #74B9FF; }
+        .column.deployment { border-top-color: #636E72; }
+
+        .column-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+        .column-header i { font-size: 28px; }
+        .frontend .column-header i { color: #00B894; }
+        .backend .column-header i { color: #74B9FF; }
+        .deployment .column-header i { color: #636E72; }
+
+        .column-title { font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 600; color: #2D3436; }
+        .tech-list { list-style: none; }
+        .tech-item { font-size: 18px; color: #636E72; margin-bottom: 10px; padding-left: 18px; position: relative; line-height: 1.4; }
+        .tech-item::before { content: '•'; position: absolute; left: 0; color: #b2bec3; font-weight: bold; }
+
+        /* Removed large image section to reduce vertical height */
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>系統架構設計</h2>
+            <p>採用現代化前後端分離架構確保擴展性</p>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="columns-container">
+                <!-- Frontend -->
+                <div class="column frontend">
+                    <div class="column-header">
+                        <i class="fas fa-desktop"></i>
+                        <div class="column-title">前端技術棧</div>
+                    </div>
+                    <ul class="tech-list">
+                        <li class="tech-item">React / Vue.js 框架</li>
+                        <li class="tech-item">TailwindCSS 樣式框架</li>
+                        <li class="tech-item">響應式設計支援多裝置</li>
+                    </ul>
+                </div>
+
+                <!-- Backend -->
+                <div class="column backend">
+                    <div class="column-header">
+                        <i class="fas fa-server"></i>
+                        <div class="column-title">後端技術棧</div>
+                    </div>
+                    <ul class="tech-list">
+                        <li class="tech-item">Node.js / Python 後端服務</li>
+                        <li class="tech-item">RESTful API 設計</li>
+                        <li class="tech-item">資料庫：MySQL / PostgreSQL</li>
+                    </ul>
+                </div>
+
+                <!-- Deployment -->
+                <div class="column deployment">
+                    <div class="column-header">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <div class="column-title">部署架構</div>
+                    </div>
+                    <ul class="tech-list">
+                        <li class="tech-item">GitHub Pages / Vercel 靜態部署</li>
+                        <li class="tech-item">Cloud 服務 (AWS/GCP) 完整部署</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Image removed to avoid overflow; content now fits within min-height -->
+        </div>
+    </div>
+</body>
+</html>

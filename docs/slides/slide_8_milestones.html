@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>開發里程碑規劃</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: #F8F9FA; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8F9FA;
+            padding: 60px 80px 20px; /* reduce bottom padding to save height */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            margin-bottom: 30px; /* reduced from 50px */
+            position: relative;
+        }
+
+        .header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #2D3436;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .header p {
+            font-size: 24px;
+            color: #636E72;
+            font-weight: 300;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 100px;
+            height: 4px;
+            background-color: #00B894;
+        }
+
+        /* Timeline Section */
+        .timeline-container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            flex: 1;
+        }
+
+        .phase-column {
+            flex: 1;
+            background: white;
+            padding: 25px;
+            border-top: 6px solid #dfe6e9;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .phase-column.active {
+            border-top-color: #00B894;
+            background: #fff;
+        }
+
+        .phase-column.future {
+            border-top-color: #74B9FF;
+        }
+
+        /* Phase Number Badge */
+        .phase-badge {
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            background-color: #636E72;
+            color: white;
+            padding: 4px 12px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        .active .phase-badge { background-color: #00B894; }
+        .future .phase-badge { background-color: #74B9FF; }
+
+        .phase-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #2D3436;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            height: 60px; /* Fixed height for alignment */
+            display: flex;
+            align-items: center;
+        }
+
+        .task-list {
+            list-style: none;
+        }
+
+        .task-item {
+            font-size: 16px;
+            color: #636E72;
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+            line-height: 1.4;
+        }
+
+        .task-item i {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            font-size: 14px;
+        }
+
+        .task-item.done i { color: #00B894; }
+        .task-item.pending i { color: #74B9FF; }
+        .task-item.waiting i { color: #b2bec3; }
+
+        /* Image Section */
+        .image-section {
+            height: 160px; /* reduced from 200px to fit within 720px */
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid #dfe6e9;
+            padding: 10px;
+            background: white;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto; /* ensure image does not overflow its container */
+            max-height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: top;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>開發里程碑規劃</h2>
+            <p>分階段推進確保專案品質與進度</p>
+        </div>
+
+        <div class="timeline-container">
+            <!-- Phase 1 -->
+            <div class="phase-column active">
+                <div class="phase-badge">PHASE 1</div>
+                <div class="phase-title">基礎建設<br><span style="font-size: 16px; font-weight: 400; color: #00B894;">(目前階段)</span></div>
+                <ul class="task-list">
+                    <li class="task-item done"><i class="fas fa-check-circle"></i> GitHub 儲存庫建立</li>
+                    <li class="task-item done"><i class="fas fa-check-circle"></i> 專案文件初始化</li>
+                    <li class="task-item pending"><i class="fas fa-sync-alt fa-spin"></i> 技術架構確認</li>
+                </ul>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="phase-column future">
+                <div class="phase-badge">PHASE 2</div>
+                <div class="phase-title">核心開發</div>
+                <ul class="task-list">
+                    <li class="task-item waiting"><i class="far fa-circle"></i> 前端介面開發</li>
+                    <li class="task-item waiting"><i class="far fa-circle"></i> 資料庫設計與建置</li>
+                    <li class="task-item waiting"><i class="far fa-circle"></i> 品牌資料匯入</li>
+                </ul>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="phase-column future">
+                <div class="phase-badge">PHASE 3</div>
+                <div class="phase-title">功能完善</div>
+                <ul class="task-list">
+                    <li class="task-item waiting"><i class="far fa-circle"></i> 搜尋功能實作</li>
+                    <li class="task-item waiting"><i class="far fa-circle"></i> 投稿功能開發</li>
+                    <li class="task-item waiting"><i class="far fa-circle"></i> 圖片上傳功能</li>
+                </ul>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="phase-column future">
+                <div class="phase-badge">PHASE 4</div>
+                <div class="phase-title">上線優化</div>
+                <ul class="task-list">
+                    <li class="task-item waiting"><i class="far fa-circle"></i> 網站部署上線</li>
+                    <li class="task-item waiting"><i class="far fa-circle"></i> 效能優化</li>
+                    <li class="task-item waiting"><i class="far fa-circle"></i> 使用者回饋收集</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <img src="/home/ubuntu/upload/search_images/2SM8WeQioMNt.png" alt="Project Roadmap Timeline">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>核心功能模組</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background-color: #F8F9FA; }
+        
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background-color: #F8F9FA;
+            /* keep top padding (title consistency) but reduce bottom padding to save height */
+            padding: 60px 80px 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            margin-bottom: 32px; /* slightly reduced from 40 to save space */
+            position: relative;
+        }
+
+        .header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #2D3436;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .header p {
+            font-size: 24px;
+            color: #636E72;
+            font-weight: 300;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 100px;
+            height: 4px;
+            background-color: #00B894;
+        }
+
+        /* Main Content Layout */
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+            gap: 50px;
+        }
+
+        .features-column {
+            flex: 2;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px 18px; /* row-gap reduced to 12px to save vertical space, column-gap a bit smaller */
+            align-content: start;
+        }
+
+        .image-column {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 320px; /* reduced from 400 to save height */
+            background: white;
+            padding: 12px; /* reduced padding */
+            border: 1px solid #dfe6e9;
+            box-shadow: 15px 15px 0px rgba(0, 184, 148, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Feature Item Styling */
+        .feature-item {
+            background: white;
+            padding: 12px; /* reduced from 20 */
+            border-left: 3px solid #00B894;
+            height: 100%;
+        }
+
+        .feature-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px; /* reduced from 12 */
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 184, 148, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00B894;
+            font-size: 18px;
+        }
+
+        .feature-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #2D3436;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding-left: 5px;
+        }
+
+        .feature-list li {
+            font-size: 16px;
+            color: #636E72;
+            margin-bottom: 4px; /* reduced from 6 */
+            padding-left: 15px;
+            position: relative;
+            line-height: 1.4;
+        }
+
+        .feature-list li::before {
+            content: '•';
+            color: #00B894;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Make the 5th item span full width if needed */
+        .feature-item:last-child {
+            grid-column: span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>核心功能模組</h2>
+            <p>五大核心功能打造完整使用者體驗</p>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="features-column">
+                <!-- Feature 1 -->
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon"><i class="fas fa-list-ul"></i></div>
+                        <div class="feature-title">品牌清單</div>
+                    </div>
+                    <ul class="feature-list">
+                        <li>收錄台灣市售純鮮乳品牌完整資訊</li>
+                        <li>依殺菌方式分類：LTLT、HTST、UHT、ESL</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon"><i class="fas fa-info-circle"></i></div>
+                        <div class="feature-title">產品資訊</div>
+                    </div>
+                    <ul class="feature-list">
+                        <li>提供各品牌鮮乳的詳細成分與特色</li>
+                        <li>品牌區域圖片展示區</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon"><i class="fas fa-search"></i></div>
+                        <div class="feature-title">搜尋功能</div>
+                    </div>
+                    <ul class="feature-list">
+                        <li>快速查找特定品牌或產品</li>
+                        <li>支援多條件篩選</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon"><i class="fas fa-edit"></i></div>
+                        <div class="feature-title">投稿功能</div>
+                    </div>
+                    <ul class="feature-list">
+                        <li>允許使用者投稿新的乳品資訊</li>
+                        <li>建立社群共建機制</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <div class="feature-icon"><i class="fas fa-images"></i></div>
+                        <div class="feature-title">產品圖片</div>
+                    </div>
+                    <ul class="feature-list">
+                        <li>展示各品牌產品的外包裝圖片</li>
+                        <li>支援使用者上傳圖片</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="image-column">
+                <div class="image-container">
+                    <img src="/home/ubuntu/upload/search_images/rI6pntX0aAl9.jpg" alt="Milk Bottle Branding">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
