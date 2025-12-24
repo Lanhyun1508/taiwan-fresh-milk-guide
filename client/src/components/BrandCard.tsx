@@ -60,13 +60,20 @@ export function BrandCard({ brand, isSelected, onSelect, showCheckbox }: BrandCa
             </div>
             
             {/* Details */}
-            <div className="flex items-baseline justify-between pt-2 border-t border-border/50">
-              <span className="text-sm text-muted-foreground">
-                {formatVolume(brand.volume)}
-              </span>
-              <span className="font-medium">
-                {formatPrice(brand.price)}
-              </span>
+            <div className="space-y-2 pt-2 border-t border-border/50">
+              <div className="flex items-baseline justify-between">
+                <span className="text-sm text-muted-foreground">
+                  {formatVolume(brand.volume)}
+                </span>
+                <span className="font-medium">
+                  {formatPrice(brand.price)}
+                </span>
+              </div>
+              {brand.shelfLife && (
+                <div className="text-xs text-muted-foreground">
+                  保存期限：約 {brand.shelfLife} 天
+                </div>
+              )}
             </div>
             
             {/* Channels Preview */}

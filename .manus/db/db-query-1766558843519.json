@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO milk_brands (brandName, productName, pasteurizationType, volume, shelfLife, price, origin, physicalChannels, onlineChannels, isOrganic, isImported, isActive) VALUES\n('台農', '台農純鮮乳', 'UHT', 936, 14, 65, '台灣', '[\"全聯\",\"家樂福\",\"大潤發\"]', '[]', false, false, true),\n('北海道別海', '北海道別海的美味牛乳', 'ESL', 946, 60, 95, '日本北海道', '[\"全聯\",\"家樂福\"]', '[]', false, true, true),\n('福樂', '福樂美國進口全脂牛乳', 'ESL', 946, 90, 89, '美國', '[\"全聯\",\"家樂福\",\"好市多\"]', '[]', false, true, true);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 2kwH7SHvYkrZvsL.33c23ca4d9ea --database bHMFCYfGq4CX9WAsA5sRFQ --execute INSERT INTO milk_brands (brandName, productName, pasteurizationType, volume, shelfLife, price, origin, physicalChannels, onlineChannels, isOrganic, isImported, isActive) VALUES\n('台農', '台農純鮮乳', 'UHT', 936, 14, 65, '台灣', '[\"全聯\",\"家樂福\",\"大潤發\"]', '[]', false, false, true),\n('北海道別海', '北海道別海的美味牛乳', 'ESL', 946, 60, 95, '日本北海道', '[\"全聯\",\"家樂福\"]', '[]', false, true, true),\n('福樂', '福樂美國進口全脂牛乳', 'ESL', 946, 90, 89, '美國', '[\"全聯\",\"家樂福\",\"好市多\"]', '[]', false, true, true);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1827
+}

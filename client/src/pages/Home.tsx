@@ -15,6 +15,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   const { data: brands, isLoading } = trpc.brands.list.useQuery({});
+  const { data: recentBrands } = trpc.brands.getRecent.useQuery({ limit: 6 });
   const { data: stats } = trpc.stats.get.useQuery();
 
   useEffect(() => {
@@ -79,6 +80,34 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <div className="editorial-line" />
+
+        {/* Recent Updates Section */}
+        {recentBrands && recentBrands.length > 0 && (
+          <section className="py-16">
+            <div className="container">
+              <div className="flex items-end justify-between mb-8">
+                <div>
+                  <p className="label-caps mb-2">Recent Updates</p>
+                  <h2 className="text-2xl md:text-3xl">最近更新</h2>
+                </div>
+                <Link
+                  href="/brands"
+                  className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1"
+                >
+                  查看全部
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {recentBrands.slice(0, 6).map((brand) => (
+                  <BrandCard key={brand.id} brand={brand} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         <div className="editorial-line" />
 

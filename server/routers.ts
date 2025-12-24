@@ -92,6 +92,15 @@ export const appRouter = router({
         return await getAllBrands(input);
       }),
 
+    getRecent: publicProcedure
+      .input(z.object({ limit: z.number().default(6) }))
+      .query(async ({ input }) => {
+        const brands = await getAllBrands({});
+        return brands
+          .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+          .slice(0, input.limit);
+      }),
+
     getById: publicProcedure
       .input(z.object({ id: z.number() }))
       .query(async ({ input }) => {
